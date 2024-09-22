@@ -42,41 +42,45 @@ This repository contains Dockerfile of code IDE running on Ubuntu for Docker's a
 
 Download automated build from public Docker Hub Registry:
 
-    docker pull tghastings/code-esaas
+    docker pull deveduio/django:latest
 
 # Step 3: Running
 
-    docker run -d -p 80:80 -p 3000:3000 tghastings/code-esaas
+    docker run -d -p 80:80 -p 3000:3000 deveduio/django:latest
 
-You can mount a directory as a volume with the argument \*-v /your-path/directory/:/root/ like this :
+## Step 3: Volume Mount (optional)
 
-    docker run -d -p 80:80 -p 3000:3000 -v /your-path/local/working/directory/:/root/environment tghastings/code-esaas
+You can mount a directory as a volume with the argument \*-v /your-path/directory/:/root/ like this:
 
-# Step 4: Accessing Code
+    docker run -d -p 80:80 -p 3000:3000 -v /your-path/local/working/directory/:/root/environment deveduio/django:latest
+
+# Step 4: Accessing the Development Environment
 
 ## Windows, MacOS, & Linux
 
     http://localhost/?folder=/root
 
+# Step 5: Django Usage
 
-# Step 5: Rails Usage
+You can now clone a django repo or create a new application using the code terminal:
 
-You can now clone a rails repo or create a new application using the code terminal:
+    python -m venv myenv
+    source myenv/bin/activate
+    django-admin startproject myproject
 
-    rails new app_name
-
-# Step 6: Running the Rails Application
+# Step 6: Running the Django Application
 
 After creating the new application cd into the directory and run the server:
 
-    cd app_name
+    cd myproject
 
 and run:
 
-    rails s -b 0.0.0.0
+    python manage.py runserver 0.0.0.0:3000
 
 # Step 7: Accessing The Rails Application
 
 ## Windows, MacOS, & Linux
 
     http://localhost:3000
+
