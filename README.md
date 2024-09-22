@@ -67,7 +67,7 @@ You can now clone a django repo or create a new application using the developmen
 
     mkdir new_repo (or clone from GitHub)
     cd new_repo
-    python -m venv myenv  --system-site-packages
+    python -m venv myenv --system-site-packages
     source myenv/bin/activate
     django-admin startproject myproject
 
