@@ -74,6 +74,7 @@ You can now clone a django repo or create a new application using the code termi
 After creating the new application cd into the directory and run the server:
 
     cd myproject
+    pip install django
 
 and run:
 
