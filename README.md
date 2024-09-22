@@ -63,7 +63,7 @@ You can mount a directory as a volume with the argument \*-v /your-path/director
 
 # Step 5: Django Usage
 
-You can now clone a django repo or create a new application using the development environment's terminal:
+You can now clone a django repo or create a new application using the development [environment's terminal](https://code.visualstudio.com/docs/terminal/basics):
 
     mkdir new_repo (or clone from GitHub)
     cd new_repo
