@@ -1,5 +1,5 @@
 This repository contains Dockerfile of code IDE running on Ubuntu for Docker's automated build published to the public Docker Hub Registry.
-### Note: This will only work on AMD64 devices. ARM will need to be downloaded and built on the user's computer.
+##### Note: This will only work on AMD64 devices. ARM will need to be downloaded and built on the user's computer.
 
 # Step 1: Docker Installation
 
