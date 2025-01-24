@@ -59,7 +59,7 @@ You can mount a directory as a volume with the argument \*-v /your-path/director
 
 ## Windows, MacOS, & Linux
 
-    http://localhost/?folder=/root
+    http://localhost/
 
 # Step 5: Django Usage
 
