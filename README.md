@@ -53,7 +53,7 @@ Download automated build from public Docker Hub Registry:
 
 You can mount a directory as a volume with the argument \*-v /your-path/directory/:/root/enviroment like this:
 
-    docker run -d -p 8080:8080 -p 3000:3000 -v /your-path/local/working/directory/:/root/environment deveduio/django:latest
+    docker run -d -p 8080:8080 -p 3000:3000 -v /your-path/local/working/directory/:/home/student deveduio/django:latest
 
 # Step 4: Accessing the Development Environment
 
